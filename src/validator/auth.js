@@ -7,7 +7,7 @@ body('name')
 .notEmpty()
 .withMessage('Name is required')
 .isLength({min:5,max:31})
-.withMessage('name should be at least 5 to 31 charcters long'),
+.withMessage('name should be at least 5 to 31 characters long'),
 
 body('email')
 .trim()
@@ -21,7 +21,7 @@ body('password')
 .notEmpty()
 .withMessage('Password is required')
 .isLength({min:8})
-.withMessage('Password must be 8 charcters')
+.withMessage('Password must be 8 characters')
 .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i")
 .withMessage('At least one uppercase. At least one lower case. At least one special character'),
 
@@ -66,7 +66,7 @@ const validatorUserLogin=[
   .notEmpty()
   .withMessage('Password is required')
   .isLength({min:8})
-  .withMessage('Password must be 8 charcters')
+  .withMessage('Password must be 8 characters')
   .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i")
   .withMessage('At least one uppercase. At least one lower case. At least one special character'),
    
@@ -80,7 +80,7 @@ const validatorUserPasswordUpdate=[
     .notEmpty()
     .withMessage('Old password is required')
     .isLength({min:8})
-    .withMessage('Password must be 8 charcters')
+    .withMessage('Password must be 8 characters')
     .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i")
     .withMessage('At least one uppercase. At least one lower case. At least one special character'),
      
@@ -89,7 +89,7 @@ const validatorUserPasswordUpdate=[
     .notEmpty()
     .withMessage('New password is required')
     .isLength({min:8})
-    .withMessage('Password must be 8 charcters')
+    .withMessage('Password must be 8 characters')
     .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i")
     .withMessage('At least one uppercase. At least one lower case. At least one special character'),
      
@@ -131,7 +131,7 @@ const validatorUserResetPasswordUpdate=[
   .notEmpty()
   .withMessage('Password is required')
   .isLength({min:8})
-  .withMessage('Password must be 8 charcters')
+  .withMessage('Password must be 8 characters')
   .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i")
   .withMessage('At least one uppercase. At least one lower case. At least one special character'),
    

@@ -6,7 +6,7 @@ const createJsonWebToken=(expiresIn,payload,secretKey)=>{
          throw new Error('Payload must be a non-empty object');
     }
     if(typeof secretKey ==!'string' || !secretKey ===''){
-        throw new Error('secretkey must be a non-empty string');
+        throw new Error('secret key must be a non-empty string');
    }
     
 
